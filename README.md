@@ -43,15 +43,15 @@ Retrieving tenants and subscriptions for the selection...
 
 No     Subscription name     Subscription ID                       Tenant
 -----  --------------------  ------------------------------------  -----------------
-[1] *  Azure subscription 1  732#####-####-####-####-############  Default Directory
+[1] *  Azure subscription 1  <subcription-id>  Default Directory
 
 The default is marked with an *; the default tenant is 'Default Directory' and subscription is 'Azure subsc
-ription 1' (732#####-####-####-####-############).
+ription 1' (<subcription-id>).
 
 Select a subscription and tenant (Type a number or Enter for no changes):
 
 Tenant: Default Directory
-Subscription: Azure subscription 1 (732#####-####-####-####-############)
+Subscription: Azure subscription 1 (<subcription-id>)
 
 [Announcements]
 With the new Azure CLI login experience, you can select the subscription you want to use more easily. Learn
@@ -66,7 +66,7 @@ az group create --name taiwo-devops-rg --location eastus
 ```
 Output: 
 {
-  "id": "/subscriptions/732#####-####-####-####-############/resourceGroups/taiwo-devops-rg",
+  "id": "/subscriptions/<subcription-id>/resourceGroups/taiwo-devops-rg",
   "location": "eastus",
   "managedBy": null,
   "name": "taiwo-devops-rg",
