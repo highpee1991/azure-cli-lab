@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Exit if any command fails
-echo "exitting... 
-\command failed..."
 set -e
+trap 'echo "❌ A command failed. Exiting..."' ERR
 
 
 echo "Current branch: $(git branch --show-current)"
